@@ -8,7 +8,8 @@ html {
 /*  apply to every element on the page, including pseudo-elements. */
 *,
 *:before,  /*  selects all before pseudo-elements */
-*:after { /* selects all after pseudo-elements */
+*:after {
+	/* selects all after pseudo-elements */
 	box-sizing: inherit;
 }
 
@@ -39,22 +40,36 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 100vh;
+	height: 100vh; /* to center text in middle of image */
 }
 
 h1 {
 	font-size: 5rem;
+	height: 100vh; /* to center text in middle of image */
+	line-height: 100vh; /* to center text in middle of image wysokosc lini dac jak obrazka */
 }
+
+/* or to center it other option */
+/* .header { */
+/* height: 700px; */
+/* position: relative; */
+/* }
+header h1 {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 45%;  
+}
+ */
 
 .header h1 {
 	color: white;
 	font-weight: 350;
 	text-align: center;
-	padding-top: 35vh;
 }
 
 h2 {
-	font-size: 1.5em; 
+	font-size: 1.5em;
 	font-weight: bolder;
 	line-height: 4rem;
 }
